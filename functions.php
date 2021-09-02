@@ -10,5 +10,10 @@ function get_files() {
 
 }
 
+function get_site_features() {
+    add_theme_support('post-thumbnails');
+}
+
 add_action('wp_enqueue_scripts', 'get_files'); 
+add_action('after_setup_theme', 'get_site_features');
 
