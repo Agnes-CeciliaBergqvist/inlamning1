@@ -20,6 +20,7 @@
                     <a href="inlagg.html"><?php the_title();?></a>
                 </h2>
                 <ul class="meta">
+                  <!--  -->
                     <li><i class="fa fa-calendar"></i> <?php echo the_time('j'), " ",  the_time('F'), " ",  the_time('Y'); ?></li>
                     <li>
                         <i class="fa fa-user"></i>
@@ -27,6 +28,7 @@
                     </li>
                     <li>
                         <i class="fa fa-tag"></i>
+                        <!-- Hämtar upp de olika kategorierna -->
                         <?php echo get_the_category_list(", ");?>
                     </li>
                 </ul>
