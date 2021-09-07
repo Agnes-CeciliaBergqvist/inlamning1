@@ -23,6 +23,10 @@ function mytheme_register_nav_menu(){
     register_nav_menus( array(
         'main-menu' => __( 'Main Menu', 'text_domain' ),
         'secondary-menu'  => __( 'Secondary Menu', 'text_domain' ),
+        'side-menu' => __( 'Side Menu', 'text_domain'),
+        'arcive-menu' => __('Arcive Menu', 'text_domain'),
+        'category-menu' => __('Category Menu', 'text_domain')
+
     ) );
 }
 

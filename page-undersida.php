@@ -71,7 +71,7 @@
             <!-- Getting the menu for the secondary, the function is in functions. the class is side-menu that sets the style -->
             <?php wp_nav_menu( array(
                                  'theme_location' =>
-            'secondary-menu', 'menu_class' => "side-menu" )); ?>
+                                'secondary-menu', 'menu_class' => "side-menu" )); ?>
           </ul>
         </aside>
       </div>
