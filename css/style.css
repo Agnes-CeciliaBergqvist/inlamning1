@@ -323,11 +323,16 @@ article .meta {
 	padding: 0;
 }
 
-	.side-menu > li {
-		/* border-bottom: solid 1px #ccc; */
+.side-menu > li {
+		border-bottom: solid 1px #ccc;
 		list-style: none;
-		/* padding: 10px 0; */
+		padding: 10px 0;
 	}
+.min-egen-class {
+	list-style: none; 
+	padding: 5px 0; 
+}
+
 
 .searchform-wrap {
 	margin-bottom: 30px;

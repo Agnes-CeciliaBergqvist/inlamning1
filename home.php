@@ -63,24 +63,24 @@
             <ul role="navigation">
               <li class="pagenav">
                 <h2>Sidor</h2>
-                <ul>
+                <ul class="min-egen-class">
                   <!-- Menu for getting the side menu  -->
                 <?php wp_nav_menu( array(
                         'theme_location' => 'side-menu', 
-                        'menu_class' => "side-menu")); ?>
+                        'menu_class' => "min-egen-class")); ?>
               <li>
                 <h2>Arkiv</h2>
-                <!-- Getting the menu for arcive -->
+                <!-- Getting the side menu for arcive -->
                 <?php wp_nav_menu( array(
                         'theme_location' =>
-            			      'arcive-menu', 'menu_class' => "side-menu")); ?>
+            			      'arcive-menu', 'menu_class' => "min-egen-class")); ?>
               
               <li class="categories">
                 <h2>Kategorier</h2>
-                <!-- Getting the menu for category -->
+                <!-- Getting the side menu for category -->
                 <?php wp_nav_menu( array(
                         'theme_location' =>
-            			      'category-menu', 'menu_class' => "side-menu")); ?>
+            			      'category-menu', 'menu_class' => "min-egen-class")); ?>
           </div>
         </aside>
       </div>
