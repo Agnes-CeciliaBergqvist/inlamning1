@@ -50,7 +50,9 @@
               <ul class="menu">
                 <li class="current-menu-item">
 					<!-- Function to get the menu in the header -->
-					<?php wp_nav_menu( array( 'theme_location' => 'main-menu')); ?> 
+					<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_id' => "nav"
+
+                                    )); ?> 
                 </li>
               </ul>
             </div>

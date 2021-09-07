@@ -17,7 +17,7 @@
                 <img src="<?php echo get_the_post_thumbnail_url(); ?>" />
                 <h2 class="title">
                     <!-- Hämtar titeln dynamsikt -->
-                    <a href="inlagg.html"><?php the_title();?> <?php the_permalink(); ?></a>
+                    <a href="inlagg.html"><?php the_title();?></a>
                 </h2>
                 <ul class="meta">
                   <!-- Geting the time, month, year -->
