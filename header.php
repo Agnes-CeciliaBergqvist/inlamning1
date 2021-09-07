@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Labb 1</title>
+	<!-- Function to fire the wp_head action to shown on the frontend -->
     <?php wp_head(); ?>
   </head>
   <body>
@@ -48,7 +49,8 @@
             <div class="col-xs-12">
               <ul class="menu">
                 <li class="current-menu-item">
-                  <?php wp_nav_menu(); ?>
+					<!-- Function to get the menu in the header -->
+					<?php wp_nav_menu( array( 'theme_location' => 'main-menu')); ?> 
                 </li>
               </ul>
             </div>
