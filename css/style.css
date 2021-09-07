@@ -324,9 +324,9 @@ article .meta {
 }
 
 	.side-menu > li {
-		border-bottom: solid 1px #ccc;
+		/* border-bottom: solid 1px #ccc; */
 		list-style: none;
-		padding: 10px 0;
+		/* padding: 10px 0; */
 	}
 
 .searchform-wrap {

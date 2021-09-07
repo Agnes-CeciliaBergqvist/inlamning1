@@ -66,9 +66,8 @@
                 <ul>
                   <!-- Menu for getting the side menu  -->
                 <?php wp_nav_menu( array(
-                        'theme_location' =>
-            			      'side-menu', 'menu_class' => "side-menu")); ?>
-
+                        'theme_location' => 'side-menu', 
+                        'menu_class' => "side-menu")); ?>
               <li>
                 <h2>Arkiv</h2>
                 <!-- Getting the menu for arcive -->
