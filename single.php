@@ -32,7 +32,7 @@
                     </li>
                 </ul>
                 <p>
-                    <!-- Hämtar utdrag dynamiskt  -->
+                    <!-- Hämtar innehåll dynamiskt  -->
                    <?php the_content(); ?>
                 </p>
             </article>

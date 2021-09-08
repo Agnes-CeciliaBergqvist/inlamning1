@@ -68,19 +68,23 @@
                 <?php wp_nav_menu( array(
                         'theme_location' => 'side-menu', 
                         'menu_class' => "min-egen-class")); ?>
+                        
              
                 <h2>Arkiv</h2>
+                <!-- Function for getting the archives -->
                 <?php get_archives();?>
               <li class="categories">
                 <h2>Kategorier</h2>
                 <ul>
                 <?php
+                
+                //  Getting the categories 
                 $categories = get_categories( array(
                     'orderby' => 'name',
                     'order'   => 'ASC'
                     
                 ) );
-
+                //Counting how many post that have catergory
                 foreach( $categories as $category ) {
                   echo '<li class="cat-item min-egen-class"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a><span class="text-white"> (' . $category->category_count . ')' . '</span></li>';
                 } ?>
