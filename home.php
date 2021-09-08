@@ -17,7 +17,7 @@
                 <img src="<?php echo get_the_post_thumbnail_url(); ?>" />
                 <h2 class="title">
                     <!-- Hämtar titeln dynamsikt -->
-                    <a href="inlagg.html"><?php the_title();?></a>
+                    <a href="<?php  the_permalink(); ?>"><?php the_title();?></a>
                 </h2>
                 <ul class="meta">
                   <!-- Geting the time, month, year -->
@@ -34,13 +34,13 @@
                 </ul>
                 <p>
                     <!-- Hämtar content dynamiskt  -->
-                   <?php the_content(); ?>
+                   <?php the_excerpt(); ?>
                 </p>
             </article>
-        <nav class="navigation pagination">
-
-        <?php }
-
+            <?php } ?>
+            <nav class="navigation pagination">
+              
+            <?php
         // Shows the pagination 
         echo paginate_links(); ?>
 
@@ -63,24 +63,33 @@
             <ul role="navigation">
               <li class="pagenav">
                 <h2>Sidor</h2>
-                <ul class="min-egen-class">
+                 <ul class="min-egen-class"> 
                   <!-- Menu for getting the side menu  -->
                 <?php wp_nav_menu( array(
                         'theme_location' => 'side-menu', 
                         'menu_class' => "min-egen-class")); ?>
-              <li>
+             
                 <h2>Arkiv</h2>
-                <!-- Getting the side menu for arcive -->
-                <?php wp_nav_menu( array(
-                        'theme_location' =>
-            			      'arcive-menu', 'menu_class' => "min-egen-class")); ?>
-              
+                <?php get_archives();?>
               <li class="categories">
                 <h2>Kategorier</h2>
-                <!-- Getting the side menu for category -->
-                <?php wp_nav_menu( array(
-                        'theme_location' =>
-            			      'category-menu', 'menu_class' => "min-egen-class")); ?>
+                <ul>
+                <?php
+                $categories = get_categories( array(
+                    'orderby' => 'name',
+                    'order'   => 'ASC'
+                    
+                ) );
+
+                foreach( $categories as $category ) {
+                  echo '<li class="cat-item min-egen-class"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a><span class="text-white"> (' . $category->category_count . ')' . '</span></li>';
+                } ?>
+                </ul>
+                
+                </li>
+              </ul>
+
+
           </div>
         </aside>
       </div>

@@ -330,7 +330,13 @@ article .meta {
 	}
 .min-egen-class {
 	list-style: none; 
-	padding: 5px 0; 
+	padding: 0; 
+	text-align: start;
+	margin: 0; 
+
+}
+.categories ul {
+	padding: 0; 
 }
 
 

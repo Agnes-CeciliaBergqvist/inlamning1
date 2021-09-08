@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Labb 1</title>
 	<!-- Function to fire the wp_head action to shown on the frontend -->
     <?php wp_head(); ?>
@@ -25,8 +26,10 @@
             </div>
             <div class="col-xs-4 text-right visible-xs">
               <div class="mobile-menu-wrap">
+         
                 <i class="fa fa-search"></i>
                 <i class="fa fa-bars menu-icon"></i>
+               
               </div>
             </div>
           </div>
@@ -47,14 +50,12 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <ul class="menu">
-                <li class="current-menu-item">
-					<!-- Function to get the menu in the header -->
-					<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_id' => "nav"
+             
+					<!-- Function to get the menu in the header for mobile and wide screens.  -->
+					<?php wp_nav_menu( array( 'container' => 'ul', 'theme_location' => 'main-menu'
 
                                     )); ?> 
-                </li>
-              </ul>
+              
             </div>
           </div>
         </div>
