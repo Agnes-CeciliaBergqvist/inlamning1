@@ -1,3 +1,9 @@
+<?php 
+/*
+Template Name: Undersida2 
+*/
+?>
+
 <?php get_header(); ?>
 
 <main>

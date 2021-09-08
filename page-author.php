@@ -1,11 +1,17 @@
-<?php get_header(); ?>
+<?php 
+/*
+Template Name: Författare 
+*/
+?>
+
+<?php the_header(); ?>
 
 <main>
   <section>
     <div class="container">
       <div class="row">
         <div id="primary" class="col-xs-12 col-md-9">
-          <h1>Blogg</h1>
+          <h1><?php the_author(); ?></h1>
           <!-- Loop för att hämta alla inlägg enligt "the loop" -->
           <?php while(have_posts()){
               //   Skiver ut själva posten som den är på 
@@ -24,8 +30,7 @@
                     <li><i class="fa fa-calendar"></i> <?php echo the_time('j'), " ",  the_time('F'), " ",  the_time('Y'); ?></li>
                     <li>
                         <i class="fa fa-user"></i>
-                        <!-- Permalink to go to author, dosent work? -->
-                        <a href="<?php the_permalink('author'); ?>"><?php the_author(); ?></a>
+                        <a href="forfattare.html"><?php the_author(); ?></a>
                     </li>
                     <li>
                         <i class="fa fa-tag"></i>
@@ -104,4 +109,5 @@
 
 
 
-<?php get_footer(); ?>
+
+<?php the_footer(); ?>
