@@ -16,7 +16,7 @@
                 <!-- Hämtar endast url till thumbnailen -->
                 <img src="<?php echo get_the_post_thumbnail_url(); ?>" />
                 <h2 class="title">
-                    <!-- Hämtar titeln dynamsikt -->
+                    <!-- Hämtar titeln dynamsikt och permalink för att kunna bli länkad läsa hela inlägget-->
                     <a href="<?php  the_permalink(); ?>"><?php the_title();?></a>
                 </h2>
                 <ul class="meta">
@@ -33,7 +33,7 @@
                     </li>
                 </ul>
                 <p>
-                    <!-- Hämtar content dynamiskt  -->
+                    <!-- Hämtar utdrag dynamiskt  -->
                    <?php the_excerpt(); ?>
                 </p>
             </article>
