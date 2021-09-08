@@ -1,3 +1,9 @@
+<?php 
+/*
+Template Name: Blogg
+*/
+?>
+
 <?php get_header(); ?>
 
 <main>

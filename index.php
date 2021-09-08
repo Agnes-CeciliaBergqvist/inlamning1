@@ -1,3 +1,8 @@
+<?php 
+/*
+Template Name: Startsida
+*/
+?>
 <?php get_header(); ?>
 
 <main>

@@ -1,3 +1,8 @@
+<?php 
+/*
+Template Name: Inlägg
+*/
+?>
 <?php get_header(); ?>
 
 <!-- Loop för att hämta alla inlägg enligt "the loop" -->
