@@ -19,8 +19,8 @@
               <form id="searchform" class="searchform">
                 <div>
                   <label class="screen-reader-text">Sök efter:</label>
-                  <input type="text" />
-                  <input type="submit" value="Sök" />
+                  <!-- Getting the function for searching form -->
+                  <?php get_search_form(); ?>
                 </div>
               </form>
             </div>
