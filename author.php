@@ -1,10 +1,4 @@
-<?php 
-/*
-Template Name: Författare 
-*/
-?>
-
-<?php the_header(); ?>
+<?php get_header(); ?>
 
 <main>
   <section>
@@ -30,7 +24,8 @@ Template Name: Författare
                     <li><i class="fa fa-calendar"></i> <?php echo the_time('j'), " ",  the_time('F'), " ",  the_time('Y'); ?></li>
                     <li>
                         <i class="fa fa-user"></i>
-                        <a href="forfattare.html"><?php the_author(); ?></a>
+                        <!-- Permalink to go to author and show author, dosent work? -->
+                        <?php the_author_posts_link();?>
                     </li>
                     <li>
                         <i class="fa fa-tag"></i>
@@ -109,5 +104,4 @@ Template Name: Författare
 
 
 
-
-<?php the_footer(); ?>
+<?php get_footer(); ?>

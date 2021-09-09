@@ -30,8 +30,8 @@ Template Name: Blogg
                     <li><i class="fa fa-calendar"></i> <?php echo the_time('j'), " ",  the_time('F'), " ",  the_time('Y'); ?></li>
                     <li>
                         <i class="fa fa-user"></i>
-                        <!-- Permalink to go to author, dosent work? -->
-                        <a href="<?php the_permalink('author'); ?>"><?php the_author(); ?></a>
+                        <!-- Permalink to go to author and show author, dosent work? -->
+                        <?php the_author_posts_link();?>
                     </li>
                     <li>
                         <i class="fa fa-tag"></i>
