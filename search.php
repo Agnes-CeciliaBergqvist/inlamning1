@@ -1,15 +1,16 @@
-<?php the_header(); ?>
+<?php get_header(); ?>
 
 <main>
   <section>
     <div class="container">
       <div class="row">
         <div id="primary" class="col-xs-12 col-md-8 col-md-offset-2">
-          <h1>Sökresultat för:</h1>
-          <form id="searchform" class="searchform">
+          <h1>Sökresultat för:"<?php echo esc_html( get_search_query( false ) ); ?>":
+          </h1>
+          
               <!-- Getting the function for searching form -->
-              <?php echo esc_html( get_search_query( false ) ); ?>
-                </form>
+              
+                
                 <!-- Loop för att hämta alla inlägg enligt "the loop" -->
                 <?php while(have_posts()){
                     //   Skiver ut själva posten som den är på 
@@ -56,4 +57,4 @@
   </section>
 </main>
 
-<?php the_footer(); ?>
+<?php get_footer(); ?>
