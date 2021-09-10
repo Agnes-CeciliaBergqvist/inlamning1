@@ -30,6 +30,7 @@ function mytheme_register_nav_menu(){
     ) );
 }
 
+
 // Action the functions so they can run 
 add_action('wp_enqueue_scripts', 'get_files'); 
 add_action('after_setup_theme', 'get_site_features');

@@ -6,7 +6,7 @@
       <div class="row">
         <div id="primary" class="col-xs-12 col-md-9">
             <!-- Hämtar arkiven men vill ta bort li -->
-          <h1>Arkiv:<?php wp_get_archives('type=monthly', 'container') ?></h1>
+          <h1>Arkiv:<?php wp_get_archives('type=monthly', 'container', 'ul') ?></h1>
           <!-- Loop för att hämta alla inlägg enligt "the loop" -->
           <?php while(have_posts()){
               //   Skiver ut själva posten som den är på 
