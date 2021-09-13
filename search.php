@@ -5,6 +5,7 @@
     <div class="container">
       <div class="row">
         <div id="primary" class="col-xs-12 col-md-8 col-md-offset-2">
+          <!-- Skriver ut queryn för sökresultatet -->
           <h1>Sökresultat för:"<?php echo esc_html( get_search_query( false ) ); ?>":
           </h1>
           
